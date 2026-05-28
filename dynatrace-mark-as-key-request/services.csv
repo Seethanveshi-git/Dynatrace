@@ -1,0 +1,3 @@
+workloadName,endpoint
+frontend,/api/auth/login
+frontend,/api/auth/signup
