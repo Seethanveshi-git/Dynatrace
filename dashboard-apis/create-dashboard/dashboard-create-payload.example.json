@@ -1,0 +1,8 @@
+{
+  "dashboardMetadata": {
+    "name": "Sample Dashboard",
+    "shared": false,
+    "owner": "admin"
+  },
+  "tiles": []
+}

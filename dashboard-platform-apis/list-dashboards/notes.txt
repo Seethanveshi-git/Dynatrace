@@ -1,0 +1,10 @@
+Platform API: List dashboard documents
+Method: GET
+Endpoint: /platform/document/v1/documents (script enforces filter: type='dashboard')
+Auth: OAuth bearer token (platform API)
+Docs:
+- https://docs.dynatrace.com/docs/analyze-explore-automate/dashboards-and-notebooks/document-api
+- https://developer.dynatrace.com/develop/platform-services/core-concepts/authentication/
+Run:
+- Fill .env OAuth variables or set DYNATRACE_PLATFORM_BEARER_TOKEN
+- node .\list-dashboards.js

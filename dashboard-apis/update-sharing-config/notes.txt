@@ -1,0 +1,11 @@
+API: Update dashboard sharing config
+Method: PUT
+Endpoint: /api/config/v1/dashboards/{id}/shareSettings
+Scope: WriteConfig
+Doc: https://docs.dynatrace.com/docs/dynatrace-api/configuration-api/dashboards-api/put-sharing-config
+Run:
+- Set DYNATRACE_BASE_URL
+- Set DYNATRACE_API_TOKEN
+- Set DYNATRACE_DASHBOARD_ID
+- Prepare sharing payload and set DYNATRACE_PAYLOAD_PATH (or keep default)
+- node .\update-sharing-config.js

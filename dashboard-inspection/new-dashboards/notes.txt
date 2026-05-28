@@ -1,0 +1,18 @@
+Purpose:
+- Inspect only NEW dashboard API response shape.
+- No create/update/delete action.
+- No changes to existing classic/new API folders.
+
+API called:
+- GET /platform/document/v1/documents?filter=type='dashboard'
+
+Output includes:
+- Top-level response keys
+- totalCount
+- nextPageKey
+- number of documents in current page
+- keys in first document
+- first document sample
+
+Run:
+- node .\inspect-new-dashboard-response.js

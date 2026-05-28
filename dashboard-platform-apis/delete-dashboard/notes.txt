@@ -1,0 +1,7 @@
+Platform API: Delete dashboard document
+Method: DELETE
+Endpoint: /platform/document/v1/documents/{id}
+Auth: OAuth bearer token (platform API)
+Run:
+- Set DYNATRACE_DOCUMENT_ID
+- node .\delete-dashboard.js

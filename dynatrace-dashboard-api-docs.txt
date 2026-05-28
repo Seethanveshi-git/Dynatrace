@@ -1,0 +1,7 @@
+"https://docs.dynatrace.com/docs/dynatrace-api/configuration-api/dashboards-api/get-all"
+"https://docs.dynatrace.com/docs/dynatrace-api/configuration-api/dashboards-api/get-dashboard"
+"https://docs.dynatrace.com/docs/dynatrace-api/configuration-api/dashboards-api/put-dashboard"
+"https://docs.dynatrace.com/docs/dynatrace-api/configuration-api/dashboards-api/del-dashboard"
+"https://docs.dynatrace.com/docs/dynatrace-api/configuration-api/dashboards-api/post-dashboard"
+"https://docs.dynatrace.com/docs/dynatrace-api/configuration-api/dashboards-api/get-sharing-config"
+"https://docs.dynatrace.com/docs/dynatrace-api/configuration-api/dashboards-api/put-sharing-config"

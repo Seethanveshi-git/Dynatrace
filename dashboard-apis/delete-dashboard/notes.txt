@@ -1,0 +1,10 @@
+API: Delete dashboard
+Method: DELETE
+Endpoint: /api/config/v1/dashboards/{id}
+Scope: WriteConfig
+Doc: https://docs.dynatrace.com/docs/dynatrace-api/configuration-api/dashboards-api/del-dashboard
+Run:
+- Set DYNATRACE_BASE_URL
+- Set DYNATRACE_API_TOKEN
+- Set DYNATRACE_DASHBOARD_ID
+- node .\delete-dashboard.js

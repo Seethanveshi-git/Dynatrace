@@ -1,0 +1,11 @@
+API: Create dashboard
+Method: POST
+Endpoint: /api/config/v1/dashboards
+Scope: WriteConfig
+Doc: https://docs.dynatrace.com/docs/dynatrace-api/configuration-api/dashboards-api/post-dashboard
+Run:
+- Set DYNATRACE_BASE_URL
+- Set DYNATRACE_API_TOKEN
+- Copy dashboard-create-payload.example.json to your real payload file
+- Set DYNATRACE_PAYLOAD_PATH if not using default file name
+- node .\create-dashboard.js

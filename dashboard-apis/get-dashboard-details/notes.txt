@@ -1,0 +1,10 @@
+API: Get dashboard details
+Method: GET
+Endpoint: /api/config/v1/dashboards/{id}
+Scope: ReadConfig
+Doc: https://docs.dynatrace.com/docs/dynatrace-api/configuration-api/dashboards-api/get-dashboard
+Run:
+- Set DYNATRACE_BASE_URL
+- Set DYNATRACE_API_TOKEN
+- Set DYNATRACE_DASHBOARD_ID
+- node .\get-dashboard-details.js

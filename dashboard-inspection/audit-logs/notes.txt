@@ -1,0 +1,21 @@
+Purpose:
+- Inspect only Audit Logs API response shape.
+- Read-only call.
+- Does not modify existing classic/new dashboard API files.
+
+API called:
+- GET /api/v2/auditlogs
+
+Auth:
+- DYNATRACE_API_TOKEN with scope: auditLogs.read
+
+Output includes:
+- Top-level response keys
+- totalCount
+- nextPageKey
+- number of entries in current page
+- keys in first entry
+- first entry sample
+
+Run:
+- node .\inspect-audit-logs-response.js

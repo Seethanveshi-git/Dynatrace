@@ -1,0 +1,8 @@
+{
+  "name": "Sample Gen3 Dashboard",
+  "description": "Created via platform document API",
+  "type": "dashboard",
+  "content": {
+    "sections": []
+  }
+}

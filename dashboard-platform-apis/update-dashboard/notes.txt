@@ -1,0 +1,10 @@
+Platform API: Update dashboard document
+Method: PUT
+Endpoint: /platform/document/v1/documents/{id}
+Auth: OAuth bearer token (platform API)
+Important:
+- Validate payload fields via tenant Swagger for document service.
+Run:
+- Set DYNATRACE_DOCUMENT_ID
+- Set DYNATRACE_DOCUMENT_PAYLOAD_PATH
+- node .\update-dashboard.js

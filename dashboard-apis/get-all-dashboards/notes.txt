@@ -1,0 +1,11 @@
+API: Get all dashboards
+Method: GET
+Endpoint: /api/config/v1/dashboards
+Scope: ReadConfig
+Optional query params: owner, tags (repeat tags key for multiple tags)
+Doc: https://docs.dynatrace.com/docs/dynatrace-api/configuration-api/dashboards-api/get-all
+Run:
+- Set DYNATRACE_BASE_URL
+- Set DYNATRACE_API_TOKEN
+- Optional: DYNATRACE_DASHBOARD_OWNER, DYNATRACE_DASHBOARD_TAGS
+- node .\get-all-dashboards.js

@@ -1,0 +1,35 @@
+Dynatrace dashboard API useful references (verified on 2026-05-25)
+
+1) GET all dashboards (Classic Dashboards API)
+URL: https://docs.dynatrace.com/docs/dynatrace-api/configuration-api/dashboards-api/get-all
+Useful points:
+- Method + endpoint: GET /api/config/v1/dashboards
+- Auth: Authorization header with Api-Token
+- Required scope: ReadConfig
+- Optional query parameters documented: owner, tags
+
+2) API authentication basics
+URL: https://docs.dynatrace.com/docs/discover-dynatrace/references/dynatrace-api/basics/dynatrace-api-authentication
+Useful points:
+- Preferred auth method is Authorization header
+- Header format: Authorization: Api-Token <token>
+
+3) GET a dashboard by id
+URL: https://docs.dynatrace.com/docs/dynatrace-api/configuration-api/dashboards-api/get-dashboard
+Useful points:
+- Method + endpoint: GET /api/config/v1/dashboards/{id}
+- Required scope: ReadConfig
+
+4) Create/Update/Delete dashboard docs
+POST: https://docs.dynatrace.com/docs/dynatrace-api/configuration-api/dashboards-api/post-dashboard
+PUT: https://docs.dynatrace.com/docs/dynatrace-api/configuration-api/dashboards-api/put-dashboard
+DELETE: https://docs.dynatrace.com/docs/dynatrace-api/configuration-api/dashboards-api/del-dashboard
+Useful points:
+- POST /api/config/v1/dashboards
+- PUT /api/config/v1/dashboards/{id}
+- DELETE /api/config/v1/dashboards/{id}
+- Write operations require WriteConfig scope
+
+Notes
+- The code in get-dynatrace-dashboards.js uses Node.js built-in fetch (Node 18+).
+- It avoids passing token in query string (safer and recommended by Dynatrace docs).

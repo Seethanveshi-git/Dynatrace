@@ -1,0 +1,24 @@
+Purpose:
+- Fallback audit-log inspection via Account Management API and OAuth.
+- Separate from environment audit logs endpoint (/api/v2/auditlogs).
+
+API called:
+- GET https://api.dynatrace.com/audit/v1/accounts/{accountUuid}
+
+Auth:
+- OAuth client credentials
+- Scope: account-audit-logs-read
+
+How account UUID is derived:
+- From DYNATRACE_OAUTH_RESOURCE, expected format: urn:dtaccount:<account-uuid>
+
+Run:
+- node .\inspect-account-audit-logs-response.js
+
+Required .env keys:
+- DYNATRACE_OAUTH_TOKEN_URL
+- DYNATRACE_OAUTH_CLIENT_ID
+- DYNATRACE_OAUTH_CLIENT_SECRET
+- DYNATRACE_OAUTH_RESOURCE
+Optional .env key:
+- DYNATRACE_ACCOUNT_AUDIT_SCOPE (default: account-audit-logs-read)
